@@ -1,0 +1,67 @@
+$white: #fff;
+$grey: #333;
+$secondary: #d8fd00;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: $grey;
+}
+
+.JS {
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+ // position: relative;
+}
+
+.tabs {
+  &__nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    &__content {
+      margin-top: 20px;
+      color: $white;
+    }
+  }
+}
+.tab {
+  &__title {
+    width: 33%;
+    margin-top: 20px;
+    background-color: $grey;
+    color: $white;
+    padding: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  &__content {
+    margin-top: 20px;
+    color: $white;
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.active {
+  background-color: $secondary;
+  color: $grey;
+}
+
+
+
+
+
+
+
